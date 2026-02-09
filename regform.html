@@ -36,13 +36,13 @@ body{
     font-weight:bold;
 }
 
-/* PHOTO FIXED TOP RIGHT */
+/* PHOTO POSITION */
 .photo-fixed{
     position:absolute;
     right:25px;
-    top:140px;
+    top:160px;
     width:120px;
-    height:120px;
+    height:140px;
     border:1px solid #000;
 }
 
@@ -52,7 +52,7 @@ body{
     object-fit:cover;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section-title{
     background:#e6e6e6;
     font-weight:bold;
@@ -212,9 +212,20 @@ if(students[id]){
 
     document.getElementById("name").innerText = s.name;
     document.getElementById("father").innerText = s.father;
+    document.getElementById("mother").innerText = s.mother;
+    document.getElementById("session").innerText = s.session;
+    document.getElementById("course").innerText = s.course;
+    document.getElementById("stream").innerText = s.stream;
+    document.getElementById("category").innerText = s.category;
+    document.getElementById("gender").innerText = s.gender;
+    document.getElementById("year").innerText = s.year;
+    document.getElementById("address").innerText = s.address;
+    document.getElementById("district").innerText = s.district;
+    document.getElementById("state").innerText = s.state;
+    document.getElementById("country").innerText = s.country;
     document.getElementById("photo").src = s.photo;
 
-    // ✅ Qualification Auto Fill
+    // AUTO QUALIFICATION TABLE
     let qualBody = document.getElementById("qualification-body");
 
     if(s.qualification){
@@ -236,9 +247,5 @@ if(students[id]){
 }
 </script>
 
-
 </body>
 </html>
-
-
-
